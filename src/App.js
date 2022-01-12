@@ -1,23 +1,13 @@
+import React from 'react';
 
 import './App.css';
-import Users from "./Components/Users";
-import Posts from "./Components/Posts";
-import Comments from "./Components/Comments";
-// import {useEffect, useState} from "react";
 
-function App() {
+const App = () => {
+    return (
+        <div>
 
-
-
-  return (
-    <div>
-
-        <Users/>
-        <Posts/>
-        <Comments/>
-
-    </div>
-  );
-}
+        </div>
+    );
+};
 
 export default App;
