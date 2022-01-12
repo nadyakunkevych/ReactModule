@@ -36,3 +36,41 @@
     transform: rotate(360deg);
   }
 }
+
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1600px;
+  justify-content: center;
+
+}
+
+.two-boxes {
+  display: flex;
+  column-gap: 10px;
+
+}
+
+
+.user-box {
+  background-color: powderblue;
+  border: solid;
+  width: 600px;
+
+}
+
+.post-box {
+  background-color: cornflowerblue;
+  border: solid;
+  width: 600px;
+
+}
+
+.comment-box {
+  background-color: royalblue;
+  border: solid;
+  margin-top: 10px;
+  width: 1200px;
+
+}

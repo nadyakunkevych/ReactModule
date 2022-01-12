@@ -10,11 +10,13 @@ function App() {
 
 
   return (
-    <div>
+    <div className={"wrap"}>
+        <div className={"two-boxes"}>
+          <div className={"user-box"}> <Users/> </div>
+          <div className={"post-box"}> <Posts/> </div>
 
-        <Users/>
-        <Posts/>
-        <Comments/>
+        </div>
+        <div className={"comment-box"}> <Comments/> </div>
 
     </div>
   );

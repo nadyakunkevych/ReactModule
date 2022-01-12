@@ -18,13 +18,13 @@ const Posts = () => {
 
     return (
         <div>
-            <ul>
+
                 {
                     posts.map(value => <li key={value.id}> {value.title}</li>)
                 }
 
-            </ul>
-            <hr/>
+
+
         </div>
     );
 };
