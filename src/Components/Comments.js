@@ -15,15 +15,13 @@ const Comments = () => {
 
     return (
         <div>
-            <ul>
+<ul>
                 {
-                    comments.map(value => <li key={value.id}> {value.name}</li>)
+                    comments.map(value => <li key={value.id}> comment = {value.name}</li>)
                 }
-
-            </ul>
-
+                    </ul>
         </div>
-    );
+                );
 };
 
 export default Comments;
