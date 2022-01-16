@@ -2,12 +2,12 @@ import User from "./User";
 
 
 
-const Users = ({getUser, users}) => {
+const Users = ({users}) => {
 
     return (
 
         <div>
-            {users.map(user =>  <User key={user.id} user={user} getUser = {getUser}/>)}
+            {users.map(user =>  <User key={user.id} user={user}/>)}
         </div>
     )
 }
