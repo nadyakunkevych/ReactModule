@@ -1,6 +1,10 @@
-import {urls} from "./urls";
+import baseUrl, {urls} from "./urls";
 
-export const userService = {
+
+export const postService = {
     getUserId: (id) => fetch (`https://jsonplaceholder.typicode.com/posts/$(urls.posts)?userId=${id}`).then (value => value.json()),
+
+    getByUserId: () => () => fetch(baseUrl + urls.users).then(value=> value.json()),
+
 
 }
