@@ -25,7 +25,7 @@ const App = () => {
             <div className={css.wrap}>
 
                 <Users getUser = {getUser}/>
-            <UserDetails/>
+            {/*<UserDetails/>*/}
         </div>
             <Posts/>
 
