@@ -26,7 +26,6 @@ const App = () => {
 
 
 
-
     return (
         <div>
             <div className={css.wrap}>

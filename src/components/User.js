@@ -5,7 +5,8 @@ const User = ({user, getUser}) => {
     return (
         <div>
            <div> {id} {name} </div>
-            <button onClick={()=>getUser(user)}> GetDetails </button>
+               <button onClick={()=>getUser(user)}> GetDetails </button>
+
         </div>
     );
 };
