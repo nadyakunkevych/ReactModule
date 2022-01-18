@@ -1,13 +1,15 @@
-import React from 'react';
-
 import './App.css';
+import Launches from "./components/Launches";
 
-const App = () => {
+
+const App =() => {
     return (
-        <div>
-
+        <div className="App">
+            <div className="Header" >
+                <Launches/>
+            </div>
         </div>
     );
-};
+}
 
 export default App;
