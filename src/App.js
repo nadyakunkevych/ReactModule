@@ -12,29 +12,25 @@ const App = () => {
     const [user, setUser] = useState(null);
     const [posts, setPosts] = useState(null);
 
-
-
     const getUser = (user) => {
         setUser(user)
     }
 
-    
-    
 
     const getUserId= (id) => {
             postService.getByUserId(id).then(value => setPosts([...value]))
         }
 
 
-
-
     return (
-        <div>
-            <div className={css.wrap}>
 
-                <Users getUser = {getUser}/>
-                {user && <UserDetails user={user} getUserId={getUserId}/>}
-        </div>
+        <div>
+           <div className={css.wrap}>
+
+                 <Users getUser = {getUser}/>
+             {user && <UserDetails user={user} getUserId={getUserId}/>}
+
+            </div>
           <Posts posts={posts} />
 
         </div>

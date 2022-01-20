@@ -1,12 +1,13 @@
 import React from 'react';
-
+import css from "./App.module.css"
 
 const UserDetails = ({user, getUserId}) => {
 const {id, name, username, email, address, phone, website, company} = user;
 
 
     return (
-        <div>
+
+        <div  className={css.box}>
             <div> <strong>Id: </strong>{id}</div>
             <div> <strong>Name: </strong>{name}</div>
             <div> <strong> Username: </strong>{username}</div>
@@ -19,8 +20,11 @@ const {id, name, username, email, address, phone, website, company} = user;
             <div> <strong> BS: </strong>{company.bs}</div>
 
 
-            <button onClick={()=> getUserId(id)}> Posts</button>
+
+            <button className={css.postButton} onClick={()=> getUserId(id)}> Posts</button>
         </div>
+
+
     );
 
 };
