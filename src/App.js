@@ -20,7 +20,6 @@ const App = () => {
 
 
     const getUserId= (id) => {
-
         postService.getByUserId(id).then(value => setPosts([...value]))
     }
 
@@ -33,7 +32,7 @@ const App = () => {
                 <Users getUser = {getUser}/>
                 {user && <UserDetails user={user} getUserId={getUserId}/>}
         </div>
-            <Posts posts={posts}/>
+            <Posts posts={posts} />
 
         </div>
     );

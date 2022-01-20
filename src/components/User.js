@@ -4,8 +4,8 @@ const User = ({user, getUser}) => {
     const {id, name} = user;
     return (
         <div>
-           <div> {id} {name} </div>
-               <button onClick={()=>getUser(user)}> GetDetails </button>
+            <div> {id}. {name} </div>
+            <button onClick={()=>getUser(user)}> GetDetails </button>
 
         </div>
     );
