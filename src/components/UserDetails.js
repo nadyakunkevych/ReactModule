@@ -22,6 +22,7 @@ const UserDetails = ({user, getUserId}) => {
 
 
             <button className={css.postButton} onClick={()=> getUserId(id)}> Posts</button>
+
         </div>
 
 
