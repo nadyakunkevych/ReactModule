@@ -15,6 +15,7 @@ const App = () => {
 
     const getUser = (user) => {
         setUser(user)
+        setPosts(null)
     }
 
 
@@ -32,9 +33,8 @@ const App = () => {
                 {user && <UserDetails user={user} getUserId={getUserId}/>}
 
             </div>
-            {/*<Posts posts={posts} />*/}
-            {posts && <Posts posts={posts}/>}
 
+            {posts && <Posts posts={posts}/>}
 
         </div>
     );

@@ -6,7 +6,7 @@ const User = ({user, getUser}) => {
     return (
         <div className={css.container}>
             <div className={css.borderBox}> <strong>{id}.  </strong> {name} </div>
-            <button  onClick={()=>getUser(user)}> GetDetails </button>
+            <button  className={css.userButton} onClick={()=>getUser(user)}> GetDetails </button>
 
 
 

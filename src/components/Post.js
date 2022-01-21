@@ -1,14 +1,19 @@
+import css from "./App.module.css"
+
+
 const Post = ({post:{id, userId, title, body}}) => {
     return (
 
-        <div>
+        <div className={css.container}>
 
-            <div>ID: {id}</div>
-            <div>USER ID: {userId}</div>
-            <div>TITLE: {title}</div>
-            <div>BODY: {body}</div>
+        <div className={css.borderBox}>
+
+            <div> <strong> ID: </strong> {id}</div>
+            <div> <strong> USER ID:  </strong> {userId}  </div>
+            <div> <strong> TITLE: </strong>{title}  </div>
+            <div> <strong> BODY:</strong> {body}</div>
         </div>
-
+        </div>
 
     );
 };
