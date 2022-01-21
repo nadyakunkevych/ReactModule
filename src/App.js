@@ -18,20 +18,22 @@ const App = () => {
 
 
     const getUserId= (id) => {
-            postService.getByUserId(id).then(value => setPosts([...value]))
-        }
+        postService.getByUserId(id).then(value => setPosts([...value]))
+    }
 
 
     return (
 
         <div>
-           <div className={css.wrap}>
+            <div className={css.wrap}>
 
-                 <Users getUser = {getUser}/>
-             {user && <UserDetails user={user} getUserId={getUserId}/>}
+                <Users getUser = {getUser}/>
+                {user && <UserDetails user={user} getUserId={getUserId}/>}
 
             </div>
-          <Posts posts={posts} />
+            <Posts posts={posts} />
+
+
 
         </div>
     );
