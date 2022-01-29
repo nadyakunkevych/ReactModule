@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {useLocation, useParams} from "react-router-dom";
+import {Link, useLocation, useParams} from "react-router-dom";
 
 import {userService} from "../../services/user.service";
 import css from './SingleUserPage.module.css'
@@ -26,7 +26,7 @@ const SingleUserPage = () => {
                     <div className={css.userDiv}>EMAIL: {user.email}</div>
                     <div className={css.userDiv}>CITY: {user.address.city}</div>
                     <div className={css.userDiv}>PHONE: {user.phone}</div>
-                    <button>User Details</button>
+                <button> <Link to={`/layout/users/${id}/comments`}> User Details </Link></button>
                 </div>
             )}
         </div>
