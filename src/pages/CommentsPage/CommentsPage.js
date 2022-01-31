@@ -5,7 +5,7 @@ const CommentsPage = () => {
 
     return (
         <div>
-            Hello
+
         </div>
     );
 };

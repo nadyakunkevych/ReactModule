@@ -1,0 +1,25 @@
+.wrap {
+    border: solid 2px;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.albumBlocks {
+    background-color: #add5fd;
+    border: solid 2px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.btnWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+}
+
+button:hover {
+    background-color: floralwhite;
+    border-color: lightgrey;
+}

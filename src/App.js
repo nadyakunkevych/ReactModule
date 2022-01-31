@@ -1,6 +1,6 @@
 import {Route, Routes} from "react-router-dom"
 
-import css from './App.module.css';
+
 import UsersPage from "./pages/UsersPage/UsersPage"
 import PostsPage from "./pages/PostsPage/PostsPage"
 import SinglePostPage from "./pages/SinglePostPage/SinglePostPage"
@@ -11,6 +11,7 @@ import AllCommentsPage from "./pages/AllCommentsPage/AllCommentsPage";
 import AllPostsPage from "./pages/AllPostsPage/AllPostsPage";
 import UserAlbumsPage from "./pages/UserAlbumsPage/UserAlbumsPage";
 import AllAlbumPhotos from "./pages/AllAlbumPhotos/AllAlbumPhotos";
+
 
 function App() {
     return (
