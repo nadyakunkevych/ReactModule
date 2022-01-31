@@ -11,6 +11,7 @@ import AllCommentsPage from "./pages/AllCommentsPage/AllCommentsPage";
 import AllPostsPage from "./pages/AllPostsPage/AllPostsPage";
 import UserAlbumsPage from "./pages/UserAlbumsPage/UserAlbumsPage";
 import AllAlbumPhotos from "./pages/AllAlbumPhotos/AllAlbumPhotos";
+import PostById from "./components/PostById/PostById";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
                     <Route path={'users'} element={<UsersPage/>}>
                         <Route path={':id'} element={<SingleUserPage/>}>
                             <Route path={'posts'} element={<AllPostsPage/>}/>
+                                <Route path={'posts'} element ={<PostById/>}/>
                         </Route>
                         <Route path={`:id/albums`} element={<UserAlbumsPage/>}>
                             <Route path={':albumId/photos'} element={<AllAlbumPhotos/>}/>
@@ -29,6 +31,7 @@ function App() {
                     <Route path={'posts'} element={<PostsPage/>}>
                         <Route path={':id'} element={<SinglePostPage/>}>
                             <Route path={'comments'} element={<AllCommentsPage/>}/>
+
                         </Route>
                     </Route>
                     <Route path={'*'} element={<NotFoundPage/>}/>
