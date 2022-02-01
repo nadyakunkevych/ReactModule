@@ -21,7 +21,7 @@ const App = () => {
     return (
         <div className={css.cover}>
             <div className={css.mainWrap}>
-            <h2 className={css.number}> Number: {state.count1} </h2>
+            <h1 className={css.number}> Number: {state.count1} </h1>
             <div className={css.buttonWrap}>
           <div className={css.btn}>
             <button onClick={()=>dispatch({type: 'inc'})} >increase </button> </div>

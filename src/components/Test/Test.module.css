@@ -19,6 +19,7 @@
 .btn > button{
     background-color: white;
     border-radius: 5px;
+    font-size: 20px;
 
 }
 .btn > button:hover {
