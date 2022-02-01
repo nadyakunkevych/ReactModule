@@ -1,0 +1,34 @@
+.cover {
+    display: flex;
+    justify-content: center;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5wlE7RxsYhCgvesbEcOzNGgF6nNDsbyxmggq-hc4AeSZnV_sBkgsCcC_2SQal3ysWBrY&usqp=CAU")
+}
+
+.mainWrap {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.buttonWrap {
+    display: flex;
+    column-gap: 5px;
+
+}
+
+.btn > button{
+    background-color: white;
+    border-radius: 5px;
+
+}
+.btn > button:hover {
+    background-color: lightgoldenrodyellow;
+    border-color: yellow;
+}
+
+.number {
+    border: 1px solid yellow;
+    box-shadow: 10px 5px 5px lightskyblue;
+    width: 150px;
+
+}
