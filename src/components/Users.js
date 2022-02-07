@@ -16,9 +16,9 @@ const Users = () => {
 
     return (
         <div>
-            <h3> Users </h3>
+            <h3> Enter any info </h3>
             <form onSubmit={submit}>
-                <input type="text" placeholder={"enter anything"} name={"userName"}/>
+                <input type="text" placeholder={"data field"} name={"userName"}/>
                 <button> save </button>
             </form>
             {users.map(user => <div key={user.id}> {user.name}</div>)}
