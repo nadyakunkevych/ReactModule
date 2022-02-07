@@ -5,7 +5,9 @@ import {addUser} from "../store";
 
 const Users = () => {
    const {users} = useSelector(store => store.user);
-   const dispatch = useDispatch();
+   const dispatch = useDispatch()
+
+
 
    const submit = (e) => {
        e.preventDefault()
@@ -16,7 +18,7 @@ const Users = () => {
 
     return (
         <div>
-            <h3> Enter any info </h3>
+            <h3> Enter user name </h3>
             <form onSubmit={submit}>
                 <input type="text" placeholder={"data field"} name={"userName"}/>
                 <button> save </button>
