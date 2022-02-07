@@ -18,7 +18,14 @@ const userSlice = createSlice({
           const user =  action.payload.user;
           state.users.push(user)
 
-        }
+        },
+        //
+        // changeStatus: (state, action) => {
+        //     state.users.find(user => user.id === action.payload.id);
+        //     userSlice.status = !userSlice.status
+        // }
+
+
     }
 });
 
